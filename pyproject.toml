@@ -1,0 +1,14 @@
+[project]
+name = "snip-vibe"
+version = "0.1.0"
+description = "✂️ SnipVibe (sv) — Dead-simple local snippet vault"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = ["typer[all]", "rich"]
+
+[project.scripts]
+sv = "snip_vibe.cli:app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/snip_vibe"]
